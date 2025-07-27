@@ -1,0 +1,18 @@
+
+var fattore = 10;
+
+fun funzionePrime(var prime){
+    ret 10 * prime * fattore;
+}
+
+fun incapsulamento(var fattore){
+
+    fun capsula(var numero){
+        var fattore = 1;
+        ret numero * funzionePrime(10);
+    }
+
+    ret capsula(5);
+}
+
+print(incapsulamento(2));
